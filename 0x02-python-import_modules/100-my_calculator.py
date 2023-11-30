@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 100-my_calculator.py
 
 if __name__ == "__main__":
     """Handle basic arithmetic operations."""
@@ -15,6 +14,6 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
 
-    num1 = int(sys.argv[1])
-    num2 = int(sys.argv[3])
-    print("{} {} {} = {}".format(num1, sys.argv[2], num2, ops[sys.argv[2]](num1, num2)))
+    a = int(sys.argv[1])
+    b = int(sys.argv[3])
+    print("{} {} {} = {}".format(a, sys.argv[2], b, ops[sys.argv[2]](a, b)))
